@@ -7,8 +7,8 @@ const ProfilePage = ({ onBack }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editSuccess, setEditSuccess] = useState(false);
   const [userData, setUserData] = useState({
-    firstName: 'นางสาวศิตานนท์',
-    lastName: 'กวะวิจารณ์',
+    firstName: 'นางสาวศศิกานต์',
+    lastName: 'ภวะวิจารณ์',
     phone: '099-019-9693'
   });
 
@@ -22,21 +22,21 @@ const ProfilePage = ({ onBack }) => {
     { 
       time: '16:30',
       date: '13/01/68',
-      name: 'นางสาวศิตานนท์ กวะวิจารณ์',
+      name: 'นางสาวศศิกานต์ ภวะวิจารณ์',
       phone: '099-019-9693',
       status: 'รอรับบริการ'
     },
     {
       time: '16:00',
       date: '13/01/67',
-      name: 'นางสาวศิตานนท์ กวะวิจารณ์', 
+      name: 'นางสาวศศิกานต์ ภวะวิจารณ์', 
       phone: '099-019-9693',
       status: 'ยกเลิก'
     },
     {
       time: '20:00',
       date: '08/12/67',
-      name: 'นางสาวศิตานนท์ กวะวิจารณ์',
+      name: 'นางสาวศศิกานต์ ภวะวิจารณ์',
       phone: '099-019-9693',
       status: 'เสร็จสิ้น'
     }

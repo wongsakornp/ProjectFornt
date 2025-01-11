@@ -12,7 +12,7 @@ const HomePage = ({ setCurrentPage, setCurrentStep }) => (
       ทำการจองออนไลน์
     </button>
     <div className="bg-blue-900 text-white p-4 rounded-md text-center">
-      <p>นายแพทย์สุทธิลักษณ์ อุดมระพีพงษ์</p>
+      <p>นายแพทย์สุทธิลักษณ์ อุดมธนะทรัพย์</p>
       <p>คลินิกเวชกรรมและการผดุงครรภ์</p>
     </div>
   </div>
