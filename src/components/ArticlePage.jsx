@@ -3,6 +3,7 @@ import { useState } from "react";
 import image1 from "../assets/new2.jpg";
 import image2 from "../assets/new3.jpg";
 import image3 from "../assets/new1.jpg";
+import logonew from "../assets/logonew.png";
 import ArticleDetail from "./ArticleDetail";
 
 const ArticlePage = () => {
@@ -76,9 +77,7 @@ const ArticlePage = () => {
             />
             <div className="p-4">
               <div className="flex items-center gap-2 mb-3">
-                <img
-                  src="/api/placeholder/24/24"
-                  alt="Author avatar"
+                  <img src={logonew} alt="logonew"
                   className="w-6 h-6 rounded-full"
                 />
                 <span className="text-sm">{article.author}</span>
