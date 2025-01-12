@@ -1,9 +1,9 @@
 // อัพเดท src/components/ArticlePage.jsx
-import { useState } from 'react';
-import image1 from '../assets/1.jpg';
-import image2 from '../assets/2.jpg';
-import image3 from '../assets/3.jpg';
-import ArticleDetail from './ArticleDetail';
+import { useState } from "react";
+import image1 from "../assets/new2.jpg";
+import image2 from "../assets/new3.jpg";
+import image3 from "../assets/new1.jpg";
+import ArticleDetail from "./ArticleDetail";
 
 const ArticlePage = () => {
   const [selectedArticle, setSelectedArticle] = useState(null);
@@ -13,9 +13,11 @@ const ArticlePage = () => {
       id: 1,
       image: image1,
       title: "กรุชอนามัย และประชาชนดูแลสุขภาพ คลายวิตกโรคจากความร้อน",
-      description: "การดูแลสุขภาพช่องปากเป็นเรื่องสำคัญ ซึ่งควรทำความสะอาดอย่างน้อยวันละ 2-3 ครั้ง",
+      description:
+        "การดูแลสุขภาพช่องปากเป็นเรื่องสำคัญ ซึ่งควรทำความสะอาดอย่างน้อยวันละ 2-3 ครั้ง",
       author: "ThaiHealth Official",
       date: "23 มกราคม 2567",
+      url: "https://www.thaihealth.or.th/%e0%b8%81%e0%b8%a3%e0%b8%a1%e0%b8%ad%e0%b8%99%e0%b8%b2%e0%b8%a1%e0%b8%b1%e0%b8%a2-%e0%b9%81%e0%b8%99%e0%b8%b0%e0%b8%9b%e0%b8%a3%e0%b8%b0%e0%b8%8a%e0%b8%b2%e0%b8%8a%e0%b8%99%e0%b8%94%e0%b8%b9%e0%b9%81/",
       fullContent: `การดูแลสุขภาพช่องปากที่ถูกต้อง และการป้องกันโรคในช่วงอากาศร้อน
 
       1. ดื่มน้ำสะอาดให้เพียงพอ
@@ -23,7 +25,7 @@ const ArticlePage = () => {
       3. สังเกตอาการผิดปกติ
       4. พักผ่อนให้เพียงพอ
 
-      หากมีอาการผิดปกติควรรีบปรึกษาแพทย์...`
+      หากมีอาการผิดปกติควรรีบปรึกษาแพทย์...`,
     },
     {
       id: 2,
@@ -32,7 +34,8 @@ const ArticlePage = () => {
       description: "เมื่อลูกน้อยมีไข้ พ่อแม่ควรรู้จักวิธีดูแลเบื้องต้น",
       author: "ThaiHealth Official",
       date: "29 มกราคม 2565",
-      fullContent: `แนวทางการดูแลเด็กและการสังเกตอาการที่ผิดปกติ...`
+      url: "https://www.thaihealth.or.th/%e0%b9%81%e0%b8%99%e0%b8%b0%e0%b8%8a%e0%b9%88%e0%b8%a7%e0%b8%87%e0%b8%ad%e0%b8%b2%e0%b8%81%e0%b8%b2%e0%b8%a8%e0%b9%80%e0%b8%9b%e0%b8%a5%e0%b8%b5%e0%b9%88%e0%b8%a2%e0%b8%99%e0%b9%81%e0%b8%9b%e0%b8%a5/",
+      fullContent: `แนวทางการดูแลเด็กและการสังเกตอาการที่ผิดปกติ...`,
     },
     {
       id: 3,
@@ -41,8 +44,9 @@ const ArticlePage = () => {
       description: "หลักการทานอาหาร เพื่อป้องกันความเสี่ยงต่อโรคต่างๆ",
       author: "ThaiHealth Official",
       date: "29 มกราคม 2565",
-      fullContent: `การรักษาสุขภาพและการป้องกันโรคในชีวิตประจำวัน...`
-    }
+      url: "https://www.thaihealth.or.th/%e0%b9%80%e0%b8%9c%e0%b8%a2%e0%b8%a7%e0%b8%b1%e0%b8%a2%e0%b8%97%e0%b8%b3%e0%b8%87%e0%b8%b2%e0%b8%99-%e0%b8%a1%e0%b8%b5%e0%b8%a0%e0%b8%b2%e0%b8%a7%e0%b8%b0%e0%b8%ad%e0%b9%89%e0%b8%a7%e0%b8%99-%e0%b9%81/",
+      fullContent: `การรักษาสุขภาพและการป้องกันโรคในชีวิตประจำวัน...`,
+    },
   ];
 
   if (selectedArticle) {
@@ -56,13 +60,18 @@ const ArticlePage = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-xl font-semibold mb-4 text-center">บทความและข่าวสารทั่วไป</h1>
+      <h1 className="text-xl font-semibold mb-4 text-center">
+        บทความและข่าวสารทั่วไป
+      </h1>
       <div className="space-y-4">
         {articles.map((article) => (
-          <div key={article.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-            <img 
-              src={article.image} 
-              alt={article.title} 
+          <div
+            key={article.id}
+            className="bg-white rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src={article.image}
+              alt={article.title}
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
@@ -76,13 +85,17 @@ const ArticlePage = () => {
                 <span className="text-sm text-gray-500">{article.date}</span>
               </div>
               <h2 className="text-lg font-semibold mb-2">{article.title}</h2>
-              <p className="text-gray-600 text-sm mb-4">{article.description}</p>
-              <button 
-                className="bg-blue-900 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-800"
-                onClick={() => setSelectedArticle(article)}
+              <p className="text-gray-600 text-sm mb-4">
+                {article.description}
+              </p>
+              <a
+                href={article.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-900 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-800 inline-block"
               >
                 เพิ่มเติม...
-              </button>
+              </a>
             </div>
           </div>
         ))}
